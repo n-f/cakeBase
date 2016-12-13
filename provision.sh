@@ -60,6 +60,7 @@ curl -s https://getcomposer.org/installer | php
 ##/usr/local/bin/composer.phar create-project --prefer-dist cakephp/app dev_app(任意名)
 ##これにてsrc以下にcakeアプリが出来る。デフォのgitignore(app/.gitignore)でvendor等が書かれている
 ##つまり ＝ 毎回シェルで、composerをインストールしてvendorを追加する必要が生まれる
+##.gitignoreのapp.phpだけコメントアウトする(git管理にする)
 #ここのcd のパスに注意
 #cd /vagrant/src/dev_app/
 #yes | /usr/local/bin/composer.phar install
