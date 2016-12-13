@@ -60,7 +60,7 @@ yes | /usr/local/bin/composer.phar install
 #ln -s /vagrant/cakephp.conf /etc/httpd/conf.d/.
 
 #ドキュメントルート設定 (/var/www/html)
-cp /vagrant/vagrant.conf /etc/httpd/conf.d/
+cp /vagrant/httpd_vagrant.conf /etc/httpd/conf.d/
 
 #httpd 起動設定
 systemctl start httpd
