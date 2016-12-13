@@ -4,7 +4,7 @@
 yum -y install httpd
 
 #仮に手動でやるならgit使うならマスト
-#yum -y install git zip
+yum -y install git zip unzip
 
 ##### ↓↓↓ データベースの選択 ↓↓↓ #####
 # (MariaDB or MySQL 不要な方をコメントアウトする)
