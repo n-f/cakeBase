@@ -55,7 +55,9 @@ curl -s https://getcomposer.org/installer | php
 #cakeのソースがgit管理ですでに存在してるが前提となる
 ##手動手順
 ##cd /vagrant
-##/usr/local/bin/composer.phar create-project --prefer-dist cakephp/app src(任意名)
+##mkdir src
+##cd /vagrant/src
+##/usr/local/bin/composer.phar create-project --prefer-dist cakephp/app dev_app(任意名)
 ##これにてsrc以下にcakeアプリが出来る。デフォのgitignore(app/.gitignore)でvendor等が書かれている
 ##つまり ＝ 毎回シェルで、composerをインストールしてvendorを追加する必要が生まれる
 #ここのcd のパスに注意
