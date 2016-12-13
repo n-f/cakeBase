@@ -52,9 +52,10 @@ cd /usr/local/bin
 curl -s https://getcomposer.org/installer | php
 
 #composer を使いcakephpライブラリをインストール(詳細をREADMEに追加)
-# ここのcd のパスに注意
-cd /vagrant/src/dev_app/
-yes | /usr/local/bin/composer.phar install
+#cakeのソースがgit管理ですでに存在してるが前提となる
+#ここのcd のパスに注意
+#cd /vagrant/src/dev_app/
+#yes | /usr/local/bin/composer.phar install
 
 #ドキュメントルート設定 (/vagrant) ln でも cp でも良い
 #ln -s /vagrant/cakephp.conf /etc/httpd/conf.d/.
