@@ -231,7 +231,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => '',
-            'database' => 'cake_set',
+            'database' => 'cake_base',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],

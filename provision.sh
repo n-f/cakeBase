@@ -81,9 +81,9 @@ systemctl enable mysqld
 
 #DB作成(SQL文)
 mysql -u root -e"
-create database cake_set;
+create database cake_base;
 grant all on *.* to cakephp@localhost identified by 'cakephp';
-use cake_set
+use cake_base
 create table basetables (
 id int unsigned auto_increment primary key,
 date datetime,
