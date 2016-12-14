@@ -32,10 +32,10 @@ http://192.168.33.10
 CakePHP3
 
 ```
-http://192.168.33.10/app
+http://192.168.33.10/dev_app
 ```
 
-## mariadbセットアップ
+## mariadbセットアップ(mariadb採択時のケース)
 以下のコマンドを実行してセットアップする
 ```
 sudo mysql_secure_installation
@@ -54,3 +54,9 @@ app/database.php .defaultからコピー後、
 db名、ユーザー(rootならroot)、パスを、加える必要がある。
 
 また、.gitigoreにより、database.phpは、コミットできなくなっている。
+
+##dbカスタマイズメモ
+
+現在、cake_baseというdb名を作成するようにprovision.shに書かれており、
+その接続について、config/app/phpに記載している、
+が、この二つの対応箇所を、変更することで、db名、テーブル名を仕様にあったものにすることが可能
