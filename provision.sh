@@ -62,8 +62,8 @@ curl -s https://getcomposer.org/installer | php
 ##つまり ＝ 毎回シェルで、composerをインストールしてvendorを追加する必要が生まれる
 ##.gitignoreのapp.phpだけコメントアウトする(git管理にする)
 #ここのcd のパスに注意
-#cd /vagrant/src/dev_app/
-#yes | /usr/local/bin/composer.phar install
+cd /vagrant/src/dev_app/
+yes | /usr/local/bin/composer.phar install
 
 #ドキュメントルート設定 (/vagrant) ln でも cp でも良い
 #ln -s /vagrant/cakephp.conf /etc/httpd/conf.d/.
@@ -82,9 +82,9 @@ systemctl enable mysqld
 #DB作成(SQL文)
 mysql -u root -e"
 create database cake_set;
-grant all on trump.* to cakephp@localhost identified by 'cakephp';
+grant all on *.* to cakephp@localhost identified by 'cakephp';
 use cake_set
-create table testset (
+create table basetables (
 id int unsigned auto_increment primary key,
 date datetime,
 num int,
