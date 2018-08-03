@@ -56,7 +56,7 @@ db名、ユーザー(rootならroot)、パスを、加える必要がある。
 
 また、.gitigoreにより、database.phpは、コミットできなくなっている。
 
-##dbカスタマイズメモ
+## dbカスタマイズメモ
 
 現在、cake_baseというdb名を作成するようにprovision.shに書かれており、
 その接続について、config/app/phpに記載している、
