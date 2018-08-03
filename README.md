@@ -46,7 +46,8 @@ DB設定後に以下コマンドを実行
 ```
 bin/cake migrations migrate
 ```
-##備考メモ
+
+## 備考メモ
 
 mariadbのセットアップで初期化(rootユーザーとそのパスワードの設定など)した後に、
 databaseの作成等を行い、
